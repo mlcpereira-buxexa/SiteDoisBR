@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telecomunicações | DoisBR</title>
+  <link rel="icon" href="Doisbr_files/logo13.png" type="image/png" />
+  <link rel="stylesheet" href="Doisbr_files/styles.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+  <header id="navbar">
+    <a href="Doisbr.html" class="logo">
+      <img src="Doisbr_files/logo13.png" alt="DoisBR Logo" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="Doisbr.html#sobre">Quem Somos</a></li>
+        <li><a href="Doisbr.html#conhecimento">Conhecimento</a></li>
+        <li class="dropdown">
+          <a href="Doisbr.html#solucoes">Soluções<span class="seta-dropdown">▾</span></a>
+          <ul class="submenu">
+            <li><a href="setor_domotica.html">Domótica&IoT</a></li>
+            <li><a href="setor_infraestruturas.html">Infraestrututras</a></li>
+            <li><a href="setor_telecom.html">Telecomunicações</a></li>
+            <li><a href="setor_energia.html">Energias Renováveis</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="Doisbr_servicos.html">Serviços<span class="seta-dropdown">▾</span></a>
+          <ul class="submenu">
+            <li><a href="Doisbr_TI.html">TI</a></li>
+            <li><a href="Doisbr_outsourcing.html">Outsourcing</a></li>
+            <li><a href="Doisbr_consultoria_formacao.html">Consulting & Formação</a></li>
+          </ul>
+        </li>
+        <li><a href="Doisbr.html#carreira">Carreira</a></li>
+        <li><a href="Doisbr.html#parcerias">Parcerias</a></li>
+        <li><a href="Doisbr.html#contato">Contatos</a></li>
+      </ul> 
+    </nav>
+    <div class="logo-adn">
+      <a href="https://adn.doisbr.pt/" target="_blank" rel="noopener noreferrer">
+        <img src="Doisbr_files/cctv.png" alt="Plataforma ADN" />
+        <span class="adn-hover">ADN</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="header-spacer"></div>
+  
+  <!-- HERO (Slideshow) -->
+  <section class="hero" style="background-image: url('Doisbr_files/telecom_hero.jpg'); background-size: contain;">
+</section>
+
+
+<section class="setores-destaque" id="telecom">
+  <h2>Telecomunicações</h2>
+  <p class="intro">A DoisBR projeta e implementa soluções de telecomunicações que garantem conectividade, segurança e desempenho para ambientes empresariais, industriais e residenciais. Atuamos desde a infraestrutura física até à ativação de serviços digitais.</p>
+  <p class="intro">Com foco em escalabilidade, compatibilidade e supervisão técnica, entregamos redes robustas, sistemas de comunicação IP e interligação de edifícios com suporte contínuo.</p>
+
+      <div class="domotica-subareas">
+        <a href="#redes" class="subarea-item">
+          <img src="Doisbr_files/icon_network.png" alt="Redes">
+          <span>Redes & Internet</span>
+        </a>
+        <a href="#voip" class="subarea-item">
+          <img src="Doisbr_files/icon_voip.png" alt="VoIP">
+          <span>Telefonia IP</span>
+        </a>
+      </div>
+
+      <div class="botao-contato-wrapper" data-aos="fade-up">
+  <button onclick="abrirFormulario()" class="botao-contato">📩 Solicitar proposta técnica</button>
+</div>
+    </div>
+  </div>
+
+  <!-- BLOCO 1: Redes & Internet -->
+  <div class="domotica-bloco" id="redes">
+    <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_rede.webp');"></div>
+    <div class="domotica-texto">
+      <div class="setor-icone">
+        <img src="Doisbr_files/icon_network_lan.png" alt="Rede">
+      </div>
+      <h3>Redes & Internet</h3>
+      <p>Desenhamos e configuramos redes LAN/WAN com gestão centralizada, acesso à internet dedicado e segurança de tráfego.</p>
+      <ul>
+        <li>Redes LAN/WAN com gestão técnica</li>
+        <li>Internet dedicada e redundância de acesso</li>
+        <li>Firewall, QoS e segmentação de tráfego</li>
+        <li>Monitorização e suporte técnico contínuo</li>
+        <li>Integração com sistemas de supervisão e Help Desk</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BLOCO 2: Telefonia IP -->
+  <div class="domotica-bloco reverso" id="voip">
+    <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_voip.jpg');"></div>
+    <div class="domotica-texto reverso">
+      <div class="setor-icone">
+        <img src="Doisbr_files/voip.png" alt="VoIP">
+      </div>
+      <h3>Telefonia IP & Comunicação Empresarial</h3>
+      <p>Implementamos centrais VoIP locais ou em cloud, com integração a plataformas como Microsoft Teams, Zoom e sistemas de atendimento automático.</p>
+      <ul>
+        <li>Centrais VoIP com gravação e relatórios</li>
+        <li>Integração com plataformas de colaboração</li>
+        <li>Gestão de extensões e grupos de atendimento</li>
+        <li>Serviços de voz sobre IP com redundância</li>
+        <li>Suporte técnico e evolução contínua</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <div id="formularioModal" class="modal-formulario">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharFormulario()">×</span>
+    <h3>Quer desenvolver um projeto técnico connosco?</h3>
+    <p>Envie-nos a sua proposta ou ideia e a nossa equipa irá analisar e responder com uma solução ajustada às suas necessidades.</p>
+    <form action="mailto:comercial@doisbr.pt" method="POST" enctype="text/plain">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="empresa">Empresa:</label>
+      <input type="text" id="empresa" name="empresa" />
+
+      <label for="mensagem">Mensagem / Requisitos:</label>
+      <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+      <button type="submit">📩 Enviar proposta</button>
+    </form>
+  </div>
+</div>
+
+  <!-- BOTÃO TOPO -->
+  <button id="topBtn" title="Voltar ao topo">↑</button>
+
+  <!-- RODAPÉ -->
+  <footer data-aos="fade-up">
+    <p>© 2025 DoisBR. Todos os direitos reservados.</p>
+    <p>
+      <a href="https://wa.me/351912020326?text=Olá,%20gostaria%20de%20ter%20mais%20informações!" 
+        target="_blank" class="whatsapp-button">
+        <img src="Doisbr_files/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.linkedin.com/company/doisbr/posts/?feedView=all" 
+        target="_blank" rel="noopener noreferrer" class="linkedin-button">
+        <img src="Doisbr_files/linkedin.png" alt="Linkedin"/>
+      </a> 
+      <a href="Doisbr_files/DoisBrBrochuraInstitucional_V2.pdf" target="_blank">📄 DoisBR Institucional</a> |
+      <a href="Doisbr_files/DoisBrMocambiqueInstitucional.pdf" target="_blank">📄 DoisBR Moçambique</a> |
+      <a href="Doisbr_files/Liga_TiServicosTecnicosPMEsBrochuraV4.pdf" target="_blank">📄 LigaTI Serviços Técnicos PMEs</a>
+    </p>
+  </footer>
+
+</body>
+<!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true });
+
+    // Navbar dinâmica
+    window.addEventListener("scroll", () => {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // Botão de topo
+    const topBtn = document.getElementById("topBtn");
+    window.addEventListener("scroll", () => {
+      topBtn.classList.toggle("visible", window.scrollY > 400);
+    });
+    topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    function abrirFormulario() {
+  document.getElementById("formularioModal").style.display = "block";
+}
+
+function fecharFormulario() {
+  document.getElementById("formularioModal").style.display = "none";
+}
+
+// Fecha modal ao clicar fora
+window.onclick = function(event) {
+  const modal = document.getElementById("formularioModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domótica&IoT | DoisBR</title>
+  <link rel="icon" href="Doisbr_files/logo13.png" type="image/png" />
+  <link rel="stylesheet" href="Doisbr_files/styles.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+  <header id="navbar">
+    <a href="Doisbr.html" class="logo">
+      <img src="Doisbr_files/logo13.png" alt="DoisBR Logo" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="Doisbr.html#sobre">Quem Somos</a></li>
+        <li><a href="Doisbr.html#conhecimento">Conhecimento</a></li>
+        <li class="dropdown">
+          <a href="Doisbr.html#solucoes">Soluções<span class="seta-dropdown">▾</span></a>
+          <ul class="submenu">
+            <li><a href="setor_domotica.html">Domótica&IoT</a></li>
+            <li><a href="setor_infraestruturas.html">Infraestrututras</a></li>
+            <li><a href="setor_telecom.html">Telecomunicações</a></li>
+            <li><a href="setor_energia.html">Energias Renováveis</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="Doisbr_servicos.html">Serviços<span class="seta-dropdown">▾</span></a>
+          <ul class="submenu">
+            <li><a href="Doisbr_TI.html">TI</a></li>
+            <li><a href="Doisbr_outsourcing.html">Outsourcing</a></li>
+            <li><a href="Doisbr_consultoria_formacao.html">Consulting & Formação</a></li>
+          </ul>
+        </li>
+        <li><a href="Doisbr.html#carreira">Carreira</a></li>
+        <li><a href="Doisbr.html#parcerias">Parcerias</a></li>
+        <li><a href="Doisbr.html#contato">Contatos</a></li>
+      </ul> 
+    </nav>
+    <div class="logo-adn">
+      <a href="https://adn.doisbr.pt/" target="_blank" rel="noopener noreferrer">
+        <img src="Doisbr_files/cctv.png" alt="Plataforma ADN" />
+        <span class="adn-hover">ADN</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="header-spacer"></div>
+  
+  <!-- HERO (Slideshow) -->
+  <section class="hero" style="background-image: url('Doisbr_files/infrahero.jpg'); background-size: cover;">
+</section>
+
+
+<section class="setores-destaque" id="domotica">
+  <h2>Domótica & IoT</h2>
+  <p class="intro">Integramos sistemas inteligentes para edifícios residenciais, empresariais e industriais, com foco em conforto, segurança e eficiência energética.</p>
+  <p class="intro">Desenvolvemos e implementamos soluções de automação que conectam iluminação, climatização, segurança, áudio/vídeo e sensores ambientais. Tudo integrado numa plataforma central, acessível localmente ou remotamente.</p>
+
+    <div class="domotica-subareas">
+      <a href="#seguranca" class="subarea-item">
+        <img src="Doisbr_files/cctvRed.png" alt="Segurança">
+        <span>Segurança</span>
+      </a>
+      <a href="#climatizacao" class="subarea-item">
+        <img src="Doisbr_files/controlRed.png" alt="Climatização">
+        <span>Climatização</span>
+      </a>
+    </div>
+
+    <div class="botao-contato-wrapper" data-aos="fade-up">
+  <button onclick="abrirFormulario()" class="botao-contato">📩 Solicitar proposta técnica</button>
+</div>
+
+
+
+  <!-- BLOCO 2: Segurança inteligente -->
+  <div class="domotica-bloco reverso" id="seguranca">
+    <div class="domotica-img" style="background-image: url('Doisbr_files/domotica-cctv.jpg');"></div>
+    <div class="domotica-texto reverso">
+            <div class="setor-icone">
+      <img src="Doisbr_files/cctv-camera.png" alt="CCTV-Camera">
+    </div>
+      <h3>Segurança</h3>
+      <p>Instalamos sistemas de videovigilância, controlo de acessos e sensores de intrusão integrados com plataformas de supervisão. A segurança é gerida em tempo real com alertas, gravação e relatórios.</p>
+      <ul>
+        <li>Câmaras CCTV IP com gravação local e cloud</li>
+        <li>Controlo de acessos por cartão, biometria ou código</li>
+        <li>Deteção de movimento e intrusão</li>
+        <li>Monitorização remota via app ou browser</li>
+        <li>Integração com GTC e Help Desk</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BLOCO 3: Climatização inteligente -->
+  <div class="domotica-bloco" id="climatizacao">
+    <div class="domotica-img" style="background-image: url('Doisbr_files/domotica_clima.jpg');"></div>
+    <div class="domotica-texto">
+            <div class="setor-icone">
+      <img src="Doisbr_files/app_control.png" alt="ControlTemperature">
+    </div>
+      <h3>Climatização</h3>
+      <p>Controlamos ambientes térmicos com sensores de temperatura, humidade e CO₂, integrados com sistemas de climatização. A regulação é automática, eficiente e adaptada à ocupação e horários.</p>
+      <ul>
+        <li>Sensores ambientais com leitura em tempo real</li>
+        <li>Controlo de AC, ventilação e piso radiante</li>
+        <li>Perfis térmicos por divisão ou horário</li>
+        <li>Gestão energética com relatórios</li>
+        <li>Integração com AVAC e GTC</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <div id="formularioModal" class="modal-formulario">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharFormulario()">×</span>
+    <h3>Quer desenvolver um projeto técnico connosco?</h3>
+    <p>Envie-nos a sua proposta ou ideia e a nossa equipa irá analisar e responder com uma solução ajustada às suas necessidades.</p>
+    <form action="mailto:comercial@doisbr.pt" method="POST" enctype="text/plain">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="empresa">Empresa:</label>
+      <input type="text" id="empresa" name="empresa" />
+
+      <label for="mensagem">Mensagem / Requisitos:</label>
+      <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+      <button type="submit">📩 Enviar proposta</button>
+    </form>
+  </div>
+</div>
+
+  <!-- BOTÃO TOPO -->
+  <button id="topBtn" title="Voltar ao topo">↑</button>
+
+  <!-- RODAPÉ -->
+  <footer data-aos="fade-up">
+    <p>© 2025 DoisBR. Todos os direitos reservados.</p>
+    <p>
+      <a href="https://wa.me/351912020326?text=Olá,%20gostaria%20de%20ter%20mais%20informações!" 
+        target="_blank" class="whatsapp-button">
+        <img src="Doisbr_files/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.linkedin.com/company/doisbr/posts/?feedView=all" 
+        target="_blank" rel="noopener noreferrer" class="linkedin-button">
+        <img src="Doisbr_files/linkedin.png" alt="Linkedin"/>
+      </a> 
+      <a href="Doisbr_files/DoisBrBrochuraInstitucional_V2.pdf" target="_blank">📄 DoisBR Institucional</a> |
+      <a href="Doisbr_files/DoisBrMocambiqueInstitucional.pdf" target="_blank">📄 DoisBR Moçambique</a> |
+      <a href="Doisbr_files/Liga_TiServicosTecnicosPMEsBrochuraV4.pdf" target="_blank">📄 LigaTI Serviços Técnicos PMEs</a>
+    </p>
+  </footer>
+
+</body>
+<!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true });
+
+    // Navbar dinâmica
+    window.addEventListener("scroll", () => {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // Botão de topo
+    const topBtn = document.getElementById("topBtn");
+    window.addEventListener("scroll", () => {
+      topBtn.classList.toggle("visible", window.scrollY > 400);
+    });
+    topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    function abrirFormulario() {
+  document.getElementById("formularioModal").style.display = "block";
+}
+
+function fecharFormulario() {
+  document.getElementById("formularioModal").style.display = "none";
+}
+
+// Fecha modal ao clicar fora
+window.onclick = function(event) {
+  const modal = document.getElementById("formularioModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</html>

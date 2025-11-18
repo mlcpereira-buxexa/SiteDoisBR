@@ -446,8 +446,8 @@ footer a:hover {
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  max-width: 280px;
-  text-align: center;
+  max-width: 500px;
+  text-align: left;
   transition: transform 0.3s ease;
 }
 
@@ -471,27 +471,7 @@ footer a:hover {
   font-size: 1em;
   color: #444;
   line-height: 1.6;
-}
-
-.botao-sabermais-wrapper {
-  margin-top: 50px;
-}
-
-.botao-sabermais {
-  display: inline-block;
-  background: #b00000;
-  color: #fff;
-  font-weight: 600;
-  padding: 15px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.botao-sabermais:hover {
-  background: #800000;
-  transform: translateY(-2px);
+  margin-bottom: 15px;
 }
 
 /* ===== SECÇÃO DoisBRGLOBAL ===== */
@@ -749,11 +729,13 @@ footer a:hover {
   font-size: 1em;
   color: #444;
   line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .setor-texto h3 span {
   font-size: 1.5em;
-  color: #cd4505;
+  color: #b3371e;
   font-weight: 700;
   letter-spacing: -0.5px;
   display: inline-block;
@@ -776,13 +758,14 @@ footer a:hover {
   flex-direction: column;
   gap: 6px;
   text-align: left;
+  font-weight: bold;
 }
 
 .servicos-lista li::before {
-  content: "✔️";
+  content: "🔻"; /* triângulo institucional */
   margin-right: 8px;
-  color: #5d1313;
 }
+
 
 
 /* ===== SECÇÃO CARREIRA ===== */
@@ -1385,10 +1368,11 @@ footer a:hover {
 .domotica-bloco {
   display: flex;
   align-items: stretch;
-  margin-top: 60px;
+  margin-top: 100px;
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
   gap: 60px;
 }
 
@@ -1405,6 +1389,7 @@ footer a:hover {
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   transition: transform 0.4s ease;
+  border-top: 4px solid #b06100;
 }
 
 .domotica-img:hover {
@@ -1569,18 +1554,46 @@ footer a:hover {
   color: #000;
 }
 
+  /* Botão hamburguer */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #b00000; /* vermelho institucional */
+}
 
+/* Mobile */
 @media (max-width: 900px) {
   header {
     padding: 15px 30px;
     flex-direction: column;
     height: auto;
   }
+  
+  nav {
+    display: none; /* esconde menu por padrão */
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-top: 2px solid #b00000;
+  }
 
   nav ul {
     flex-direction: column;
-    gap: 12px;
-    align-items: center;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block; /* mostra hamburguer */
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+
+  nav.active {
+    display: flex; /* mostra menu quando ativo */
   }
 
   .hero {
@@ -1692,4 +1705,3 @@ footer a:hover {
     padding: 6px 10px;
   }
 }
-

@@ -1566,12 +1566,52 @@ footer a:hover {
 /* ===== MOBILE até 900px ===== */
 @media (max-width: 900px) {
   /* Navbar */
-  .menu-toggle { display:block; position:absolute; top:20px; right:20px; }
-  nav { display:none; flex-direction:column; width:100%; background:#fff; }
-  nav.active { display:flex; }
-  nav ul { flex-direction:column; gap:15px; align-items:flex-start; }
-  nav ul li .submenu { display:none; flex-direction:column; }
-  nav ul li .submenu.active { display:flex; }
+  /* Botão hamburguer */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;   /* ajusta para não ficar colado ao topo */
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #b00000;
+    z-index: 1100; /* garante que fica acima do menu */
+  }
+
+  /* Menu mobile */
+  nav {
+    position: absolute; /* fixa logo abaixo do header */
+    top: 90px;          /* altura do header */
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 2px solid #b00000;
+    max-height: calc(100vh - 90px); /* ocupa todo o espaço disponível */
+    overflow-y: auto;               /* scroll se houver muitas opções */
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  nav ul li .submenu {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul li .submenu.active {
+    display: flex;
+  }
 
   /* Hero */
   .hero { height:50vh; padding-top:100px; }
@@ -1593,4 +1633,15 @@ footer a:hover {
   .domotica-texto h3, .outsourcing-texto h3 { font-size:1.4em; }
   .domotica-texto p, .outsourcing-texto p { font-size:0.95em; }
   .setor-card .setor-imagem { width:160px; height:160px; }
+
+  footer p {
+    margin-bottom: 12px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 6px 0;
+  }
 }

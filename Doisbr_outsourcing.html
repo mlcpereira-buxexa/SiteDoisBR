@@ -18,7 +18,7 @@
         <li><a href="Doisbr.html#sobre">Quem Somos</a></li>
         <li><a href="Doisbr.html#conhecimento">Conhecimento</a></li>
         <li class="dropdown">
-          <a href="Doisbr.html#solucoes">Soluções<span class="seta-dropdown">▾</span></a>
+          <a href="javascript:void(0)" class="dropdown-toggle">Soluções<span class="seta-dropdown">▾</span></a>
           <ul class="submenu">
             <li><a href="setor_domotica.html">Domótica&IoT</a></li>
             <li><a href="setor_infraestruturas.html">Infraestrututras</a></li>
@@ -27,11 +27,11 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="Doisbr_servicos.html">Serviços<span class="seta-dropdown">▾</span></a>
+          <a href="javascript:void(0)" class="dropdown-toggle">Serviços<span class="seta-dropdown">▾</span></a>
           <ul class="submenu">
-            <li><a href="Doisbr_TI.html">TI</a></li>
+            <li><a href="Doisbr_execucao.html">Execução Técnica</a></li>
             <li><a href="Doisbr_outsourcing.html">Outsourcing</a></li>
-            <li><a href="Doisbr_consultoria_formacao.html">Consulting & Formação</a></li>
+            <li><a href="Doisbr_consultoria_formacao.html">Consultoria</a></li>
           </ul>
         </li>
         <li><a href="Doisbr.html#carreira">Carreira</a></li>
@@ -39,6 +39,7 @@
         <li><a href="Doisbr.html#contato">Contatos</a></li>
       </ul> 
     </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
     <div class="logo-adn">
       <a href="https://adn.doisbr.pt/" target="_blank" rel="noopener noreferrer">
         <img src="Doisbr_files/cctv.png" alt="Plataforma ADN" />
@@ -50,7 +51,7 @@
   <div class="header-spacer"></div>
   
   <!-- HERO (Slideshow) -->
-  <section class="hero hero-outsourcing" style="background-image: url('Doisbr_files/slide4.jpg');">
+  <section class="hero hero-outsourcing" style="background-image: url('Doisbr_files/slide4.jpg'); background-size: cover;">
   <div class="hero-overlay-outsourcing"></div>
 </section>
 
@@ -136,5 +137,32 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Dropdown toggle em mobile
+document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+  toggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    const submenu = this.nextElementSibling;
+    submenu.classList.toggle("active");
+  });
+});
+
+// Hamburguer
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector("header nav");
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  menuToggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
+});
+
+// Dropdowns mobile
+document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+  toggle.addEventListener("click", e => {
+    e.preventDefault();
+    const submenu = toggle.nextElementSibling;
+    submenu.classList.toggle("active");
+  });
+});
+
     </script>
 </html>

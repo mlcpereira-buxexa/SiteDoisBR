@@ -20,7 +20,7 @@
         <li><a href="#sobre">Quem Somos</a></li>
         <li><a href="#conhecimento">Conhecimento</a></li>
         <li class="dropdown">
-          <a href="#solucoes">Soluções <span class="seta-dropdown">▾</span></a>
+          <a href="javascript:void(0)" class="dropdown-toggle">Soluções<span class="seta-dropdown">▾</span></a>
           <ul class="submenu">
             <li><a href="setor_domotica.html">Domótica&IoT</a></li>
             <li><a href="setor_infraestruturas.html">Infraestrututras</a></li>
@@ -29,11 +29,11 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="Doisbr_servicos.html">Serviços <span class="seta-dropdown">▾</span></a>
+          <a href="javascript:void(0)" class="dropdown-toggle">Serviços<span class="seta-dropdown">▾</span></a>
           <ul class="submenu">
-            <li><a href="Doisbr_TI.html">TI</a></li> 
+            <li><a href="Doisbr_execucao.html">Execução Técnica</a></li> 
             <li><a href="Doisbr_outsourcing.html">Outsourcing</a></li>
-            <li><a href="Doisbr_consultoria_formacao.html">Consulting & Formação</a></li>
+            <li><a href="Doisbr_consultoria_formacao.html">Consultoria</a></li>
           </ul>
         </li>
         <li><a href="#carreira">Carreira</a></li>
@@ -478,12 +478,23 @@ window.onclick = function(event) {
   }
 }
   
-  const menuToggle = document.getElementById("menu-toggle");
+// Hamburguer
+const menuToggle = document.getElementById("menu-toggle");
 const nav = document.querySelector("header nav");
-
 menuToggle.addEventListener("click", () => {
   nav.classList.toggle("active");
+  menuToggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
 });
+
+// Dropdowns mobile
+document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+  toggle.addEventListener("click", e => {
+    e.preventDefault();
+    const submenu = toggle.nextElementSibling;
+    submenu.classList.toggle("active");
+  });
+});
+
 
   </script>
 </html>

@@ -18,7 +18,7 @@
         <li><a href="Doisbr.html#sobre">Quem Somos</a></li>
         <li><a href="Doisbr.html#conhecimento">Conhecimento</a></li>
         <li class="dropdown">
-          <a href="Doisbr.html#solucoes">Soluções<span class="seta-dropdown">▾</span></a>
+          <a href="javascript:void(0)" class="dropdown-toggle">Soluções<span class="seta-dropdown">▾</span></a>
           <ul class="submenu">
             <li><a href="setor_domotica.html">Domótica&IoT</a></li>
             <li><a href="setor_infraestruturas.html">Infraestrututras</a></li>
@@ -27,11 +27,11 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="Doisbr_servicos.html">Serviços<span class="seta-dropdown">▾</span></a>
+          <a href="javascript:void(0)" class="dropdown-toggle">Serviços<span class="seta-dropdown">▾</span></a>
           <ul class="submenu">
-            <li><a href="Doisbr_TI.html">TI</a></li>
+            <li><a href="Doisbr_execucao.html">Execução Técnica</a></li>
             <li><a href="Doisbr_outsourcing.html">Outsourcing</a></li>
-            <li><a href="Doisbr_consultoria_formacao.html">Consulting & Formação</a></li>
+            <li><a href="Doisbr_consultoria_formacao.html">Consultoria</a></li>
           </ul>
         </li>
         <li><a href="Doisbr.html#carreira">Carreira</a></li>
@@ -39,6 +39,7 @@
         <li><a href="Doisbr.html#contato">Contatos</a></li>
       </ul> 
     </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
     <div class="logo-adn">
       <a href="https://adn.doisbr.pt/" target="_blank" rel="noopener noreferrer">
         <img src="Doisbr_files/cctv.png" alt="Plataforma ADN" />
@@ -56,21 +57,33 @@
 
 <section class="setores-destaque" id="infraestruturas">
   <h2>Infraestruturas Técnicas</h2>
-  <p class="intro">A eficiência, disponibilidade, performance e segurança das Tecnologias de Informação e Comunicação são fatores críticos para a competitividade das empresas. A DoisBR projeta, implementa e mantém infraestruturas técnicas que sustentam operações empresariais exigentes.</p>
-  <p class="intro">Com soluções otimizadas para ambientes críticos, garantimos continuidade de serviço, compatibilidade técnica e suporte à evolução tecnológica dos nossos clientes.</p>
+  <p class="intro">
+    A base de todas as soluções tecnológicas.
+  </p>
+  <p class="intro">
+    Projetamos e implementamos infraestruturas técnicas integradas, preparadas para suportar as exigências de conectividade, desempenho e segurança das organizações modernas.
+  </p>
 
       <div class="domotica-subareas">
-        <a href="#datacenter" class="subarea-item">
-          <img src="Doisbr_files/icon_datacenter.png" alt="Data Center">
-          <span>Data Centers</span>
+        <a href="#redes" class="subarea-item">
+          <img src="Doisbr_files/icon_cable.png" alt="Redes">
+          <span>Redes</span>
         </a>
-        <a href="#cablagem" class="subarea-item">
-          <img src="Doisbr_files/icon_cable.png" alt="Cablagem">
-          <span>Cablagem & Fibra</span>
+        <a href="#caminhos" class="subarea-item">
+          <img src="Doisbr_files/icon_cable_tray.png" alt="Caminhos de Cabos">
+          <span>Caminhos de Cabos</span>
         </a>
-        <a href="#postos" class="subarea-item">
-          <img src="Doisbr_files/icon_workstation.png" alt="Postos">
-          <span>Postos de Trabalho</span>
+        <a href="#energia" class="subarea-item">
+          <img src="Doisbr_files/uninterrupted-power-supply.png" alt="UPS">
+          <span>UPS</span>
+        </a>
+        <a href="#ited" class="subarea-item">
+          <img src="Doisbr_files/electric-generator.png" alt="Instalações Elétricas">
+          <span>Instalações Elétricas</span>
+        </a>
+        <a href="#manutencao" class="subarea-item">
+          <img src="Doisbr_files/maintenance.png" alt="Manutenção">
+          <span>Manutenção</span>
         </a>
       </div>
 
@@ -78,62 +91,91 @@
   <button onclick="abrirFormulario()" class="botao-contato">📩 Solicitar proposta técnica</button>
 </div>
 
-  <!-- BLOCO 1: Data Centers -->
-  <div class="domotica-bloco" id="datacenter">
-    <div class="domotica-img" style="background-image: url('Doisbr_files/infra_datacenter.jpg');"></div>
-    <div class="domotica-texto">
-      <div class="setor-icone">
-        <img src="Doisbr_files/icon_datacenterNormal.png" alt="Data Center">
-      </div>
-      <h3>Data Centers</h3>
-      <p>Desenvolvemos soluções completas para Data Centers, incluindo Green Data Centers, com foco em eficiência energética, redundância e escalabilidade.</p>
-      <ul>
-        <li>Infraestrutura física e lógica para ambientes críticos</li>
-        <li>Climatização técnica e controlo ambiental</li>
-        <li>Redundância elétrica e UPS dimensionadas</li>
-        <li>Monitorização e supervisão técnica</li>
-        <li>Compatibilidade com sistemas de segurança e AVAC</li>
-      </ul>
+<div class="domotica-bloco" id="redes">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/infra_redes.jpg');"></div>
+  <div class="domotica-texto">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_rede.png" alt="Redes">
     </div>
+    <h3>Redes Estruturadas</h3>
+    <p>Projetamos e instalamos redes estruturadas em cobre e fibra ótica, com certificação técnica e compatibilidade com sistemas digitais e industriais.</p>
+    <ul>
+      <li>Cablagem CAT6/CAT7 e fibra monomodo/multimodo</li>
+      <li>Certificação técnica e testes de desempenho</li>
+      <li>Integração com redes, segurança e AVAC</li>
+      <li>Documentação técnica e planos de manutenção</li>
+    </ul>
   </div>
+</div>
 
-  <!-- BLOCO 2: Cablagem & Fibra -->
-  <div class="domotica-bloco reverso" id="cablagem">
-    <div class="domotica-img" style="background-image: url('Doisbr_files/infra_cablagem.webp');"></div>
-    <div class="domotica-texto reverso">
-      <div class="setor-icone">
-        <img src="Doisbr_files/icon_cableNormal.png" alt="Cablagem">
-      </div>
-      <h3>Cablagem Estruturada & Fibra Ótica</h3>
-      <p>Instalamos e certificamos cablagens estruturadas UTP/FTP, coaxial e fibra ótica, com compatibilidade técnica para sistemas digitais e industriais.</p>
-      <ul>
-        <li>Cablagem estruturada CAT6/CAT7 e coaxial</li>
-        <li>Fibra ótica monomodo e multimodo</li>
-        <li>Certificação técnica e testes de desempenho</li>
-        <li>Integração com redes, segurança e AVAC</li>
-        <li>Documentação técnica e planos de manutenção</li>
-      </ul>
+<div class="domotica-bloco reverso" id="caminhos">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/infra_caminhos.webp');"></div>
+  <div class="domotica-texto reverso">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_patchpanel.png" alt="Caminhos de Cabos">
     </div>
+    <h3>Caminhos Técnicos & Bastidores</h3>
+    <p>Executamos a montagem de caminhos de cabos, bastidores e patch panels com organização técnica, acessibilidade e escalabilidade para ambientes empresariais e industriais.</p>
+    <ul>
+      <li>Montagem de bastidores e patch panels</li>
+      <li>Organização técnica e etiquetagem</li>
+      <li>Caminhos de cabos horizontais e verticais</li>
+      <li>Integração com redes e sistemas técnicos</li>
+    </ul>
   </div>
+</div>
 
-  <!-- BLOCO 3: Postos de Trabalho -->
-  <div class="domotica-bloco" id="postos">
-    <div class="domotica-img" style="background-image: url('Doisbr_files/infra_postos.jpg');"></div>
-    <div class="domotica-texto">
-      <div class="setor-icone">
-        <img src="Doisbr_files/icon_workstationNormal.png" alt="Postos">
-      </div>
-      <h3>Postos de Trabalho & Ativação Técnica</h3>
-      <p>Configuramos e ativamos postos de trabalho com integração de hardware, software e conectividade, garantindo operação imediata e suporte técnico.</p>
-      <ul>
-        <li>Instalação e configuração de equipamentos</li>
-        <li>Integração com redes, servidores e periféricos</li>
-        <li>Ativação de software e serviços empresariais</li>
-        <li>Suporte técnico local e remoto</li>
-        <li>Manutenção preventiva e corretiva</li>
-      </ul>
+<div class="domotica-bloco" id="energia">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/infra_ups.jpg');"></div>
+  <div class="domotica-texto">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_ups.png" alt="UPS">
     </div>
+    <h3>Sistemas de Energia & UPS</h3>
+    <p>Instalamos sistemas de energia dedicados, com UPS dimensionadas para garantir redundância, continuidade de serviço e proteção de equipamentos críticos.</p>
+    <ul>
+      <li>UPS monofásicas e trifásicas</li>
+      <li>Redundância elétrica e proteção de carga</li>
+      <li>Monitorização de consumo e autonomia</li>
+      <li>Integração com supervisão técnica</li>
+    </ul>
   </div>
+</div>
+
+<div class="domotica-bloco reverso" id="ited">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/infra_ited.webp');"></div>
+  <div class="domotica-texto reverso">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_electric.png" alt="Instalações Elétricas">
+    </div>
+    <h3>Instalações Elétricas & ITED</h3>
+    <p>Executamos instalações elétricas e de telecomunicações ITED com conformidade legal, segurança técnica e integração com sistemas digitais.</p>
+    <ul>
+      <li>Quadros elétricos e distribuição técnica</li>
+      <li>Infraestruturas ITED certificadas</li>
+      <li>Integração com redes e sistemas de supervisão</li>
+      <li>Documentação técnica e conformidade normativa</li>
+    </ul>
+  </div>
+</div>
+
+<div class="domotica-bloco" id="manutencao">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/infra_manutencao.jpg');"></div>
+  <div class="domotica-texto">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_manutencao.png" alt="Manutenção">
+    </div>
+    <h3>Manutenção & Certificação Técnica</h3>
+    <p>Prestamos serviços de manutenção preventiva e corretiva, com certificação técnica e relatórios detalhados para garantir a fiabilidade das infraestruturas.</p>
+    <ul>
+      <li>Manutenção preventiva e corretiva</li>
+      <li>Testes de desempenho e conformidade</li>
+      <li>Relatórios técnicos e planos de ação</li>
+      <li>Suporte técnico contínuo</li>
+    </ul>
+  </div>
+</div>
+
 </section>
 
   <div id="formularioModal" class="modal-formulario">
@@ -214,5 +256,23 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Hamburguer
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector("header nav");
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  menuToggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
+});
+
+// Dropdowns mobile
+document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+  toggle.addEventListener("click", e => {
+    e.preventDefault();
+    const submenu = toggle.nextElementSibling;
+    submenu.classList.toggle("active");
+  });
+});
+
     </script>
 </html>

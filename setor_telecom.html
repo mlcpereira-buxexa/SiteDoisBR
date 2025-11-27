@@ -18,7 +18,7 @@
         <li><a href="Doisbr.html#sobre">Quem Somos</a></li>
         <li><a href="Doisbr.html#conhecimento">Conhecimento</a></li>
         <li class="dropdown">
-          <a href="Doisbr.html#solucoes">Soluções<span class="seta-dropdown">▾</span></a>
+          <a href="javascript:void(0)" class="dropdown-toggle">Soluções<span class="seta-dropdown">▾</span></a>
           <ul class="submenu">
             <li><a href="setor_domotica.html">Domótica&IoT</a></li>
             <li><a href="setor_infraestruturas.html">Infraestrututras</a></li>
@@ -27,11 +27,11 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="Doisbr_servicos.html">Serviços<span class="seta-dropdown">▾</span></a>
+          <a href="javascript:void(0)" class="dropdown-toggle">Serviços<span class="seta-dropdown">▾</span></a>
           <ul class="submenu">
-            <li><a href="Doisbr_TI.html">TI</a></li>
+            <li><a href="Doisbr_execucao.html">Execução Técnica</a></li>
             <li><a href="Doisbr_outsourcing.html">Outsourcing</a></li>
-            <li><a href="Doisbr_consultoria_formacao.html">Consulting & Formação</a></li>
+            <li><a href="Doisbr_consultoria_formacao.html">Consultoria</a></li>
           </ul>
         </li>
         <li><a href="Doisbr.html#carreira">Carreira</a></li>
@@ -39,6 +39,7 @@
         <li><a href="Doisbr.html#contato">Contatos</a></li>
       </ul> 
     </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
     <div class="logo-adn">
       <a href="https://adn.doisbr.pt/" target="_blank" rel="noopener noreferrer">
         <img src="Doisbr_files/cctv.png" alt="Plataforma ADN" />
@@ -50,23 +51,39 @@
   <div class="header-spacer"></div>
   
   <!-- HERO (Slideshow) -->
-  <section class="hero" style="background-image: url('Doisbr_files/telecom_hero.jpg'); background-size: contain;">
+  <section class="hero" style="background-image: url('Doisbr_files/telecom_hero.webp'); background-size: cover;">
 </section>
 
 
 <section class="setores-destaque" id="telecom">
   <h2>Telecomunicações</h2>
-  <p class="intro">A DoisBR projeta e implementa soluções de telecomunicações que garantem conectividade, segurança e desempenho para ambientes empresariais, industriais e residenciais. Atuamos desde a infraestrutura física até à ativação de serviços digitais.</p>
-  <p class="intro">Com foco em escalabilidade, compatibilidade e supervisão técnica, entregamos redes robustas, sistemas de comunicação IP e interligação de edifícios com suporte contínuo.</p>
+  <p class="intro">
+    Garantimos comunicação fiável e de alto desempenho em qualquer contexto.
+  </p>
+  <p class="intro">
+    Oferecemos soluções que ligam pessoas, sistemas e equipamentos, com foco na continuidade de serviço e na qualidade do sinal.
+  </p>
 
       <div class="domotica-subareas">
-        <a href="#redes" class="subarea-item">
-          <img src="Doisbr_files/icon_network.png" alt="Redes">
-          <span>Redes & Internet</span>
+        <a href="#lanwifi" class="subarea-item">
+          <img src="Doisbr_files/router.png" alt="LAN/Wi-Fi">
+          <span>LAN/Wi-Fi</span>
         </a>
-        <a href="#voip" class="subarea-item">
-          <img src="Doisbr_files/icon_voip.png" alt="VoIP">
-          <span>Telefonia IP</span>
+        <a href="#comunicacoes" class="subarea-item">
+          <img src="Doisbr_files/network.png" alt="Comunicações">
+          <span>Comunicações</span>
+        </a>
+        <a href="#fibra" class="subarea-item">
+          <img src="Doisbr_files/optics.png" alt="Fibra Ótica">
+          <span>Fibra Ótica</span>
+        </a>
+        <a href="#antenas" class="subarea-item">
+          <img src="Doisbr_files/signal.png" alt="Antenas">
+          <span>Antenas</span>
+        </a>
+        <a href="#interligacao" class="subarea-item">
+          <img src="Doisbr_files/icon_datacenter.png" alt="Datacenter">
+          <span>Datacenter</span>
         </a>
       </div>
 
@@ -76,43 +93,91 @@
     </div>
   </div>
 
-  <!-- BLOCO 1: Redes & Internet -->
-  <div class="domotica-bloco" id="redes">
-    <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_rede.webp');"></div>
-    <div class="domotica-texto">
-      <div class="setor-icone">
-        <img src="Doisbr_files/icon_network_lan.png" alt="Rede">
-      </div>
-      <h3>Redes & Internet</h3>
-      <p>Desenhamos e configuramos redes LAN/WAN com gestão centralizada, acesso à internet dedicado e segurança de tráfego.</p>
-      <ul>
-        <li>Redes LAN/WAN com gestão técnica</li>
-        <li>Internet dedicada e redundância de acesso</li>
-        <li>Firewall, QoS e segmentação de tráfego</li>
-        <li>Monitorização e suporte técnico contínuo</li>
-        <li>Integração com sistemas de supervisão e Help Desk</li>
-      </ul>
+  <div class="domotica-bloco" id="lanwifi">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_lanwifi.jpg');"></div>
+  <div class="domotica-texto">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_wifi.png" alt="LAN/Wi-Fi">
     </div>
+    <h3>Redes LAN/WAN & Wi-Fi Corporativo</h3>
+    <p>Desenhamos e configuramos redes locais e remotas com cobertura Wi-Fi empresarial, gestão técnica e segurança de tráfego.</p>
+    <ul>
+      <li>Redes LAN/WAN com gestão centralizada</li>
+      <li>Wi-Fi corporativo com cobertura otimizada</li>
+      <li>Firewall, VLANs e segmentação de tráfego</li>
+      <li>Monitorização e suporte técnico contínuo</li>
+    </ul>
+  </div>
   </div>
 
-  <!-- BLOCO 2: Telefonia IP -->
-  <div class="domotica-bloco reverso" id="voip">
-    <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_voip.jpg');"></div>
-    <div class="domotica-texto reverso">
-      <div class="setor-icone">
-        <img src="Doisbr_files/voip.png" alt="VoIP">
-      </div>
-      <h3>Telefonia IP & Comunicação Empresarial</h3>
-      <p>Implementamos centrais VoIP locais ou em cloud, com integração a plataformas como Microsoft Teams, Zoom e sistemas de atendimento automático.</p>
-      <ul>
-        <li>Centrais VoIP com gravação e relatórios</li>
-        <li>Integração com plataformas de colaboração</li>
-        <li>Gestão de extensões e grupos de atendimento</li>
-        <li>Serviços de voz sobre IP com redundância</li>
-        <li>Suporte técnico e evolução contínua</li>
-      </ul>
+  <div class="domotica-bloco reverso" id="comunicacoes">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_comunicacoes.jpg');"></div>
+  <div class="domotica-texto reverso">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_unified.png" alt="Comunicações">
     </div>
+    <h3>Comunicações Unificadas</h3>
+    <p>Integramos voz, dados e vídeo em plataformas colaborativas, com gestão técnica e compatibilidade com sistemas empresariais.</p>
+    <ul>
+      <li>Telefonia IP, videoconferência e chat técnico</li>
+      <li>Integração com Teams, Zoom e plataformas cloud</li>
+      <li>Gestão de extensões e grupos de atendimento</li>
+      <li>Relatórios e gravação de chamadas</li>
+    </ul>
   </div>
+</div>
+
+<div class="domotica-bloco" id="fibra">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_fibra.jpg');"></div>
+  <div class="domotica-texto">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_fibra.png" alt="Fibra Ótica">
+    </div>
+    <h3>Sistemas de Fibra Ótica</h3>
+    <p>Instalamos e certificamos redes de fibra ótica monomodo e multimodo com alto desempenho e compatibilidade técnica.</p>
+    <ul>
+      <li>Fibra monomodo e multimodo certificada</li>
+      <li>Integração com redes LAN/WAN e datacenters</li>
+      <li>Testes de desempenho e conformidade</li>
+      <li>Documentação técnica e planos de manutenção</li>
+    </ul>
+  </div>
+</div>
+
+<div class="domotica-bloco reverso" id="antenas">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_antenas.jpg');"></div>
+  <div class="domotica-texto reverso">
+    <div class="setor-icone">
+      <img src="Doisbr_files/icon_antena.png" alt="Antenas">
+    </div>
+    <h3>Antenas & Distribuição de Sinal</h3>
+    <p>Instalamos sistemas de antenas e distribuição de sinal para ambientes empresariais, industriais e técnicos.</p>
+    <ul>
+      <li>Antenas interiores e exteriores</li>
+      <li>Distribuição de sinal por cablagem técnica</li>
+      <li>Compatibilidade com sistemas digitais e analógicos</li>
+      <li>Integração com supervisão e Help Desk</li>
+    </ul>
+  </div>
+</div>
+
+<div class="domotica-bloco" id="interligacao">
+  <div class="domotica-img" style="background-image: url('Doisbr_files/telecom_interligacao.jpg');"></div>
+  <div class="domotica-texto">
+    <div class="setor-icone">
+      <img src="Doisbr_files/data-center.png" alt="Datacenter">
+    </div>
+    <h3>Cablagem & Interligação de Datacenters</h3>
+    <p>Executamos interligações técnicas entre datacenters com cablagem estruturada, fibra ótica e redundância de conectividade.</p>
+    <ul>
+      <li>Cablagem estruturada e fibra certificada</li>
+      <li>Interligação entre racks e salas técnicas</li>
+      <li>Redundância e segurança de conectividade</li>
+      <li>Documentação e planos de manutenção</li>
+    </ul>
+  </div>
+</div>
+
 </section>
 
   <div id="formularioModal" class="modal-formulario">
@@ -193,5 +258,23 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Hamburguer
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector("header nav");
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  menuToggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
+});
+
+// Dropdowns mobile
+document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+  toggle.addEventListener("click", e => {
+    e.preventDefault();
+    const submenu = toggle.nextElementSibling;
+    submenu.classList.toggle("active");
+  });
+});
+
     </script>
 </html>

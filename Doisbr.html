@@ -496,5 +496,12 @@ document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
 });
 
 
+    document.querySelectorAll(".area-card").forEach(card => {
+  card.addEventListener("click", () => {
+    document.querySelectorAll(".area-card").forEach(c => c.classList.remove("active"));
+    card.classList.add("active");
+  });
+});
+
   </script>
 </html>

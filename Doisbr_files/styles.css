@@ -596,7 +596,8 @@ footer a:hover {
   transform-style: preserve-3d;
 }
 
-.area-card:hover .card-inner {
+.area-card:hover .card-inner,
+.area-card.active .card-inner {
   transform: rotateY(180deg);
 }
 

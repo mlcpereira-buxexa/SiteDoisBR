@@ -1685,6 +1685,68 @@ footer a:hover {
     padding-left: 0;          /* remove indentação da lista */
     list-style-position: inside; /* bullets alinhados ao centro */
   }
+
+    /* Stack vertical: imagem em cima, texto em baixo */
+  .outsourcing-bloco,
+  .consultoria-formacao-bloco {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px; /* um pouco menos de espaço em mobile */
+  }
+
+  /* Imagens ocupam toda a largura e não “encolhem” */
+  .outsourcing-img,
+  .consultoria-formacao-img {
+    width: 100%;
+    height: auto;         /* usa proporção natural da imagem de fundo */
+    min-height: 250px;    /* garante que aparece */
+    max-height: 320px;    /* evita ficar gigante em telemóveis */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  /* Texto centralizado e sem padding lateral herdado do desktop */
+  .outsourcing-texto,
+  .consultoria-formacao-texto {
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .outsourcing-texto h3,
+  .consultoria-formacao-texto h3 {
+    font-size: 1.6em;
+    margin: 0;
+  }
+
+  .outsourcing-texto p,
+  .consultoria-formacao-texto p,
+  .outsourcing-texto ul,
+  .consultoria-formacao-texto ul {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  /* Listas centralizadas e legíveis */
+  .outsourcing-texto ul,
+  .consultoria-formacao-texto ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  /* Ícone com tamanho consistente em mobile */
+  .setor-icone img {
+    width: 56px;
+    height: 56px;
+    margin-top: 0;
+  }
 }
 
 /* ===== MOBILE pequeno até 600px ===== */

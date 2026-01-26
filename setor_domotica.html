@@ -9,46 +9,67 @@
 </head>
 <body>
     <!-- NAVBAR -->
-  <header id="navbar">
-    <a href="Doisbr.html" class="logo">
-      <img src="Doisbr_files/logo13.png" alt="DoisBR Logo" />
-    </a>
-    <nav>
-      <ul>
-        <li><a href="Doisbr.html#sobre">Quem Somos</a></li>
-        <li><a href="Doisbr.html#conhecimento">Conhecimento</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropdown-toggle">Soluções<span class="seta-dropdown">▾</span></a>
-          <ul class="submenu">
-            <li><a href="setor_domotica.html">Domótica&IoT</a></li>
-            <li><a href="setor_infraestruturas.html">Infraestrututras</a></li>
-            <li><a href="setor_telecom.html">Telecomunicações</a></li>
-            <li><a href="setor_energia.html">Energias Renováveis</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropdown-toggle">Serviços<span class="seta-dropdown">▾</span></a>
-          <ul class="submenu">
-            <li><a href="Doisbr_execucao.html">Execução Técnica</a></li>
-            <li><a href="Doisbr_outsourcing.html">Outsourcing</a></li>
-            <li><a href="Doisbr_consultoria_formacao.html">Consultoria</a></li>
-          </ul>
-        </li>
-        <li><a href="Doisbr.html#carreira">Carreira</a></li>
-        <li><a href="Doisbr.html#parcerias">Parcerias</a></li>
-        <li><a href="Doisbr.html#contato">Contatos</a></li>
-      </ul> 
-    </nav>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <div class="logo-adn">
-      <a href="https://adn.doisbr.pt/" target="_blank" rel="noopener noreferrer">
-        <img src="Doisbr_files/cctv.png" alt="Plataforma ADN" />
-        <span class="adn-hover">ADN</span>
+  <header id="navbar" class="site-header">
+  <a href="Doisbr.html" class="logo brand" aria-label="DoisBR — Início">
+    <img src="Doisbr_files/logo13.png" alt="DoisBR Logo" />
+  </a>
+
+  <button
+    class="menu-toggle"
+    id="menu-toggle"
+    type="button"
+    aria-label="Abrir menu"
+    aria-expanded="false"
+    aria-controls="primary-nav"
+  >
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+    <ul class="nav-list">
+      <li><a href="Doisbr.html#sobre">Quem Somos</a></li>
+      <li><a href="Doisbr.html#conhecimento">Conhecimento</a></li>
+
+      <li class="dropdown">
+        <button class="dropdown-toggle" type="button">
+          Soluções <span class="seta-dropdown">▾</span>
+        </button>
+        <ul class="submenu">
+          <li><a href="setor_domotica.html">Domótica &amp; IoT</a></li>
+          <li><a href="setor_infraestruturas.html">Infraestruturas</a></li>
+          <li><a href="setor_telecom.html">Telecomunicações</a></li>
+          <li><a href="setor_energia.html">Energias Renováveis</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <button class="dropdown-toggle" type="button">
+          Serviços <span class="seta-dropdown">▾</span>
+        </button>
+        <ul class="submenu">
+          <li><a href="Doisbr_execucao.html">Execução Técnica</a></li>
+          <li><a href="Doisbr_outsourcing.html">Outsourcing</a></li>
+          <li><a href="Doisbr_consultoria_formacao.html">Consultoria</a></li>
+        </ul>
+      </li>
+
+      <li><a href="Doisbr.html#carreira">Carreira</a></li>
+      <li><a href="Doisbr.html#parcerias">Parcerias</a></li>
+      <li><a href="Doisbr.html#contato">Contactos</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="#" onclick="abrirFormulario(); return false;">Pedir proposta</a>
+
+      <a class="adn-link" href="https://adn.doisbr.pt/" target="_blank" rel="noopener noreferrer">
+        <img src="Doisbr_files/cctv.png" alt="" />
+        <span>ADN</span>
       </a>
     </div>
-  </header>
+  </nav>
 
-  <div class="header-spacer"></div>
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+  </header>
   
   <!-- HERO (Slideshow) -->
   <section class="hero" style="background-image: url('Doisbr_files/infrahero.jpg'); background-size: cover;">
@@ -208,21 +229,66 @@
   <button id="topBtn" title="Voltar ao topo">↑</button>
 
   <!-- RODAPÉ -->
-  <footer data-aos="fade-up">
-    <p>© 2025 DoisBR. Todos os direitos reservados.</p>
-    <p>
-      <a href="https://wa.me/351912020326?text=Olá,%20gostaria%20de%20ter%20mais%20informações!" 
-        target="_blank" class="whatsapp-button">
-        <img src="Doisbr_files/whatsapp.png" alt="WhatsApp" />
-      </a>
-      <a href="https://www.linkedin.com/company/doisbr/posts/?feedView=all" 
-        target="_blank" rel="noopener noreferrer" class="linkedin-button">
-        <img src="Doisbr_files/linkedin.png" alt="Linkedin"/>
-      </a> 
-      <a href="Doisbr_files/DoisBrBrochuraInstitucional_V2.pdf" target="_blank">📄 DoisBR Institucional</a> |
-      <a href="Doisbr_files/DoisBrMocambiqueInstitucional.pdf" target="_blank">📄 DoisBR Moçambique</a> |
-      <a href="Doisbr_files/Liga_TiServicosTecnicosPMEsBrochuraV4.pdf" target="_blank">📄 LigaTI Serviços Técnicos PMEs</a>
-    </p>
+  <footer class="site-footer" data-aos="fade-up">
+  <div class="footer-wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="Doisbr_files/logo13.png" alt="DoisBR" />
+        <p>Engenharia e serviços técnicos em telecomunicações, infraestruturas, energia e domótica.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="Doisbr.html#sobre">Quem Somos</a>
+        <a href="Doisbr.html#carreira">Carreira</a>
+        <a href="Doisbr.html#parcerias">Parcerias</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Soluções</h4>
+        <a href="setor_domotica.html">Domótica &amp; IoT</a>
+        <a href="setor_infraestruturas.html">Infraestruturas</a>
+        <a href="setor_telecom.html">Telecomunicações</a>
+        <a href="setor_energia.html">Energias Renováveis</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <a href="Doisbr_execucao.html">Execução Técnica</a>
+        <a href="Doisbr_outsourcing.html">Outsourcing</a>
+        <a href="Doisbr_consultoria_formacao.html">Consultoria</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="Doisbr.html#contato">Fale connosco</a>
+        <a href="tel:+351912020326">+351 912 020 326</a>
+        <a href="mailto:geral@doisbr.pt">geral@doisbr.pt</a>
+
+        <div class="footer-social">
+          <a href="https://wa.me/351912020326?text=Olá,%20gostaria%20de%20ter%20mais%20informações!"
+             target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <img src="Doisbr_files/whatsapp.png" alt="" />
+          </a>
+
+          <a href="https://www.linkedin.com/company/doisbr/posts/?feedView=all"
+             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="Doisbr_files/linkedin.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> DoisBR. Todos os direitos reservados.</span>
+
+      <div class="footer-legal">
+        <a href="#">Privacidade</a>
+        <span class="dot">•</span>
+        <a href="#">Termos</a>
+      </div>
+    </div>
+  </div>
   </footer>
 
 </body>

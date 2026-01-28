@@ -418,7 +418,6 @@ body.no-scroll{ overflow: hidden; }
 }
 
 .hero-frase {
-  .hero-frase{
   position: absolute;
   bottom: 60px;
 
@@ -434,7 +433,6 @@ body.no-scroll{ overflow: hidden; }
   box-sizing: border-box;
 }
 
-}
 /* Variante com cor institucional */
 .hero-frase {
   background: linear-gradient(90deg, #160707, #ec3b3b);

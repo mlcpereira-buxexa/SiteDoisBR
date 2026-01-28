@@ -134,11 +134,6 @@
   <footer class="site-footer" data-aos="fade-up">
   <div class="footer-wrap">
     <div class="footer-grid">
-      <div class="footer-col footer-brand">
-        <img src="Doisbr_files/logo13.png" alt="DoisBR" />
-        <p>Engenharia e serviços técnicos em telecomunicações, infraestruturas, energia e domótica.</p>
-      </div>
-
       <div class="footer-col">
         <h4>Empresa</h4>
         <a href="Doisbr.html#sobre">Quem Somos</a>
@@ -199,6 +194,71 @@
   <script>
     AOS.init({ duration: 900, once: true });
 
+        // ====== MENU MOBILE (hamburger) ======
+const menuToggle = document.getElementById("menu-toggle");
+const primaryNav = document.getElementById("primary-nav");
+const navBackdrop = document.getElementById("nav-backdrop");
+
+function openMenu(){
+  primaryNav.classList.add("active");
+  navBackdrop.classList.add("active");
+  menuToggle.classList.add("is-open");
+  menuToggle.setAttribute("aria-expanded", "true");
+  document.body.classList.add("no-scroll");
+}
+
+function closeMenu(){
+  primaryNav.classList.remove("active");
+  navBackdrop.classList.remove("active");
+  menuToggle.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("no-scroll");
+
+  // fecha também submenus abertos
+  document.querySelectorAll(".dropdown.open").forEach(d => d.classList.remove("open"));
+}
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = primaryNav.classList.contains("active");
+  isOpen ? closeMenu() : openMenu();
+});
+
+navBackdrop.addEventListener("click", closeMenu);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeMenu();
+});
+
+// fechar menu ao clicar num link (só em mobile)
+primaryNav.querySelectorAll("a").forEach(a => {
+  a.addEventListener("click", () => {
+    if (window.matchMedia("(max-width: 980px)").matches) closeMenu();
+  });
+});
+
+// dropdowns por clique (mobile)
+document.querySelectorAll(".dropdown-toggle").forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    if (!window.matchMedia("(max-width: 980px)").matches) return; // desktop mantém hover
+    e.preventDefault();
+
+    const li = btn.closest(".dropdown");
+    const willOpen = !li.classList.contains("open");
+
+    // fecha os outros dropdowns
+    document.querySelectorAll(".dropdown.open").forEach(d => {
+      if (d !== li) d.classList.remove("open");
+    });
+
+    li.classList.toggle("open", willOpen);
+  });
+});
+
+// se sair do mobile para desktop, fecha o drawer
+window.addEventListener("resize", () => {
+  if (!window.matchMedia("(max-width: 980px)").matches) closeMenu();
+});
+
     // Navbar dinâmica
     window.addEventListener("scroll", () => {
       const navbar = document.getElementById("navbar");
@@ -227,23 +287,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-// Hamburguer
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.querySelector("header nav");
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
-  menuToggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
-});
-
-// Dropdowns mobile
-document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
-  toggle.addEventListener("click", e => {
-    e.preventDefault();
-    const submenu = toggle.nextElementSibling;
-    submenu.classList.toggle("active");
-  });
-});
 
     </script>
 </html>

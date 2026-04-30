@@ -2061,3 +2061,121 @@ section p {
 
 html { overflow-y: auto; }
 body { overflow-y: visible !important; }
+
+/* =========================
+   CORREÇÃO TABLET / PÁGINAS SOLUÇÕES
+   Ex: 912 x 1368
+========================= */
+
+/* Centrar corretamente os blocos de texto nas páginas de soluções */
+@media (max-width: 980px) {
+
+  .domotica-texto,
+  .outsourcing-texto,
+  .consultoria-formacao-texto,
+  .servicos-texto {
+    width: 100%;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .domotica-texto p,
+  .outsourcing-texto p,
+  .consultoria-formacao-texto p,
+  .servicos-texto p {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Centra o bloco da lista, mas mantém o texto da lista alinhado à esquerda */
+  .domotica-texto ul,
+  .outsourcing-texto ul,
+  .consultoria-formacao-texto ul,
+  .servicos-texto ul {
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.2em;
+    text-align: left;
+    list-style-position: outside;
+  }
+}
+
+
+/* =========================
+   DOMÓTICA SUBÁREAS - TABLET
+   Corrige ícones descentrados em 912px
+========================= */
+
+@media (min-width: 701px) and (max-width: 980px) {
+
+  .domotica-subareas {
+    width: 100%;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    gap: 24px;
+    padding-left: 0;
+    padding-right: 0;
+
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
+
+  .subarea-item {
+    flex: 0 1 110px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .subarea-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* =========================
+   DOMÓTICA SUBÁREAS - MOBILE PEQUENO
+   Mantém scroll horizontal só quando faz sentido
+========================= */
+
+@media (max-width: 700px) {
+
+  .domotica-subareas {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 15px;
+
+    scroll-snap-type: x mandatory;
+  }
+
+  .subarea-item {
+    flex: 0 0 90px;
+    text-align: center;
+  }
+
+  .subarea-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
